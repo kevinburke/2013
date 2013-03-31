@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>custom title</title>
+        <meta name="description" content="custom content">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" />
+        <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" />
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+    </head>
+
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+      <div class="container">
+
+        <h1 id="title">KEVIN BURKE</h1>
+        <div class="row">
+          <div class="span4">
+            <div id="blurb" class="clearfix">
+              <img id="logo" src="img/kevin-mask-blue.png" alt="Kevin Burke" />
+              <span id="blurb-text">
+                Hey, I'm Kevin. I build great experiences. Currently I work at <a
+                href="http://www.twilio.com">Twilio</a>. <a href="/about">More
+                about me</a>
+              </span>
+            </div>
+          </div>
+
+          <div class="span8">
+ <h1 class="entry-title">How to design your API SDK</h1>
+                <div class="entry-meta">
+            <span class="sep">Posted on </span><a href="http://kev.inburke.com/kevin/client-library-design/"
+title="9:24 am" rel="bookmark"><time class="entry-date" datetime="2013-01-29T09:24:40+00:00"
+pubdate>January 29, 2013</time></a>        </div><!-- .entry-meta -->
+            </header><!-- .entry-header -->
+    <div class="entry-content">
+        <p>I've worked with Twilio's <a href="http://www.twilio.com/docs/libraries">client libraries</a> pretty much
+every day for the last year and I wanted to share some of the things we've
+learned about helper libraries.</p>
+<h3>Should you have helper libraries?</h3>
+<p><strong>You should think about helper libraries as a more accessible interface to
+your API</strong>. Your helper libraries trade the details of your authentication
+scheme and URL structure for the ease of "do X in N lines of code." If the
+benefits of a more accessible interface outweigh the costs, do it.</p>
+<p>If people are paying to access your API (Twilio, AWS, Sendgrid, Stripe, for
+example), then you probably should write helper libraries. A more accessible
+API translates directly into more revenue for your company.</p>
+<p>If you're two founders in a garage somewhere, maybe not. The gap between
+your company's success and failure is probably not a somewhat easier API
+interface. Writing a helper library is a lot of work, maybe one to four
+man-weeks depending on the size of your API and your familiarity with the
+language in question, plus ongoing maintenance.</p>
+<p>You might not need a client library if your customers are all highly
+experienced programmers. For example the other day I wrote my own client
+for the <a href="https://developers.google.com/recaptcha/">Recaptcha API</a>. I knew how I wanted to consume it and
+learning/installing a Recaptcha library would have been unnecessary overhead.</p>
+<p>You may also not need a client library if standard libraries have very good
+HTTP clients. For example, the <a href="http://docs.python-requests.org/en/latest/">Requests</a> library dramatically lowers
+the barrier for writing a client that uses <a href="http://en.wikipedia.org/wiki/Basic_access_authentication">HTTP basic auth</a>. Developers
+who are familiar with Requests will have an easier time writing http clients.
+Implementing HTTP basic auth remains a large pain point in other languages.</p>
+<h3>How should you design your helper libraries?</h3>
+<p>Realize that if you are writing a helper library, <strong>for many of your customers
+the helper library <em>will</em> be the API</strong>. You should put as much care into its
+design as you do your HTTP API. Here are a few guiding principles.</p>
+<ul>
+<li><p>If you've designed your API in a <a href="http://blog.steveklabnik.com/posts/2011-07-03-nobody-understands-rest-or-http">RESTful way</a>, your API endpoints
+should map to objects in your system. Translate these objects in a
+straightforward way into classes in the helper library, making the obvious
+transformations - translate numbers from strings in the API representation into
+integers, and translate date strings such as "2012-11-05" into date objects.</p></li>
+<li><p><strong>Your library should be flexible</strong>. I will illustrate this with a short
+story. After much toil and effort, the Twilio SMS team was ready to ship
+<a href="http://www.twilio.com/engineering/2012/11/08/adventures-in-unicode-sms">support for Unicode messages</a>. As part of the change, we changed
+the API's <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.17">'Content-Type'</a> header from </p></li>
+</ul>
+<p><pre class="brush: bash; title: ; notranslate" title="">
+application/json
+</pre></p>
+<p>to</p>
+<p><pre class="brush: bash; title: ; notranslate" title="">
+application/json; charset=utf-8
+</pre></p>
+<p>We rolled out Unicode SMS and there was much rejoicing; fifteen minutes later,
+we found out we'd broken three of our helper libraries, and there was much
+wailing and gnashing of teeth. It turns out the libraries had <a href="https://github.com/twilio/twilio-php/commit/784638f8342332440b1189663ff050826b8caf1d">hard-coded
+a check for an <code>application/json</code> content-type</a>, and threw an
+exception when we changed the Content-Type header.</p>
+<ul>
+<li><p>Your library should complain loudly if there are errors. Per the point
+on flexibility above, your HTTP API should validate inputs, not the client
+library. For example let's say we had the library raise an error if you tried
+to send an SMS with more than 160 characters in it. If Twilio ever wanted
+to ship support for concatenated SMS messages, no one who had this library
+installed would be able to send multi-message texts. Instead, let your HTTP API
+do the validation and pass through errors in a transparent way.</p></li>
+<li><p>Your library use consistent naming schemes. For example, the convention for
+updating resources should be the same everywhere. Hanging up a call and
+changing an account's FriendlyName both represent the same concept, updating
+a resource. You should have methods to update each that look like:</p></li>
+</ul>
+<p><pre class="brush: php; title: ; notranslate" title="">
+$account-&gt;update('FriendlyName', 'blah');
+$call-&gt;update('Status', 'completed');
+</pre></p>
+<p>It's okay, even good, to have methods that map to readable verbs:</p>
+<p><pre class="brush: php; title: ; notranslate" title="">
+$account-&gt;reserveNumber('+14105556789');
+$call-&gt;hangup();
+</pre></p>
+<p>However, these should always be thin wrappers around the <code>update()</code> methods.</p>
+<p><pre class="brush: php; title: ; notranslate" title="">
+class Call {
+    function hangup() {
+        return $this-&gt;update('Status', 'completed');
+    }
+}
+</pre></p>
+<p>Having only the readable-verb names is <a href="https://github.com/twilio/twilio-csharp/issues/46">a path that leads to madness</a>.
+It becomes much tougher to translate from the underlying HTTP request to code,
+and much trickier to add new methods or optional parameters later.</p>
+<ul>
+<li><p>Your library should include a user agent with the library name and version
+number, that you can correlate against your own API logs. Custom HTTP clients
+rarely (read: never) will add their own user agent, and <a href="https://github.com/joyent/node/issues/4552">standard library
+maintainers don't like default user agents much</a>.</p></li>
+<li><p>Your library <strong>needs</strong> to include installation instructions, preferably
+written at a beginner level. Users have varying degrees of experience with
+things you might take for granted, like package managers, and will try to run
+your code in a variety of different environments (VPS, AWS, on old versions of
+programming languages, behind a firewall without admin rights, etc). Any <a href="https://github.com/twilio/twilio-python/blob/master/twilio/rest/__init__.py#L98">steps
+your library can take to make things easier</a> are good. As an example, the
+Twilio libraries include the <a href="https://github.com/twilio/twilio-php/blob/master/Services/cacert.pem">SSL cert</a> necessary for connecting to the Twilio
+API.</p></li>
+</ul>
+<h3>How should you test your library?</h3>
+<p>The <a href="http://www.twilio.com/docs/api/rest">Twilio API</a> has over 20 different endpoints, split into list
+resources and instance resources, which support the HTTP methods GET, POST, and
+sometimes DELETE. Let's say there are 50 different combinations of endpoints
+and HTTP methods in total. Add in implementations for each helper library, and
+the complexity grows very quickly - if you have 5 helper libraries you're
+talking about 250 possible methods, all of which could have bugs.</p>
+<p>One solution to this is to write a lot of unit tests. The problem is these take
+a lot of time to write, and at some level you are going to have to mock out the
+API, or stop short of making the actual API request. Instead we've taken the
+following approach to testing.</p>
+<ol>
+<li>Start with a valid HTTP request, and the parameters that go with it.</li>
+<li>Parse the HTTP request and turn it into a piece of sample code that
+exercises an aspect of your helper library.</li>
+<li>Run that code sample, and intercept the HTTP request made by the library.</li>
+<li>Compare the output with the original HTTP request. </li>
+</ol>
+<p>This approach has the advantage of actually checking against the HTTP request
+that gets made, so you can test things like URL encoding issues. You can reuse
+the same set of HTTP requests across all of your libraries. The HTTP
+"integration" tests will also detect actions that should be possible with the
+API but are <a href="https://github.com/twilio/twilio-java/pull/70/files">not implemented in the client</a>.</p>
+<p>You might think it's difficult to do automated code generation, but it actually
+was not that much work, and it's very easy if you've written your library in a
+consistent way. Here's a small sample that generates snippets for our Python
+helper library.</p>
+<div>
+<pre class="brush: python; title: ; notranslate" title="">
+def process_instance_resource(self, resource, sid, method=&quot;GET&quot;, params=None):
+    &quot;&quot;&quot; Generate code snippets for an instance resource &quot;&quot;&quot;
+    get_line = '{} = {}.get(&quot;{}&quot;)'.format(self.instance_name, self.base, sid)
+    if method == &quot;GET&quot;:
+        interesting_line = 'print {}.{}'.format(self.instance_name,
+            self.get_interesting_property(resource))
+        return &quot;\n&quot;.join([get_line, interesting_line])
+    elif method == &quot;POST&quot;:
+        update_line = '{} = {}.update(&quot;{}&quot;, {})'.format(
+            self.instance_name, self.base, sid, self.transform_params(params))
+        interesting_line = 'print {}.{}'.format(
+            self.instance_name, self.get_interesting_property(resource))
+        return &quot;\n&quot;.join([update_line, interesting_line])
+    elif method == &quot;DELETE&quot;:
+        return '{}.delete(&quot;{}&quot;)'.format(self.base, sid)
+    else:
+        raise ValueError(&quot;Method {} not supported&quot;.format(method))
+</pre>
+</div>
+<p>Generating code snippets has the added advantage that you can then easily embed
+these into your customer-facing documentation, <a href="http://www.twilio.com/docs/api/rest/available-phone-numbers#local-get-basic-example-1">as we've done in our
+documentation</a>.</p>
+<h3>How do people use helper libraries?</h3>
+<p>While pretty much every resource gets used in the aggregate, individual
+accounts tend to only use one or two resources. This suggests that your API is
+only being referenced from one or two places within a customer's codebase.</p>
+<h3>How should you document your helper library?</h3>
+<p>Per the point above, your library is probably being used in only one or two
+places in a customer's codebase. This suggests your customer is <a href="http://hbswk.hbs.edu/item/6496.html">hiring your
+API to do a specific job</a>. Your documentation hierarchy should be aligned
+around those jobs. Combined with the integration test/code snippet generator
+above, and you should have a working code example for every useful action in
+your API. You will probably also want to have documentation for the public
+library interface, such as the types and parameters for each method, but the
+self-service examples will be OK for 85% of your users.</p>
+            </div><!-- .entry-content -->
+    <footer class="entry-meta">
+        Posted in <a href="http://kev.inburke.com/category/code-2/" title="View all posts in Code" rel="category tag">Code</a>, <a href="http://kev.inburke.com/category/usability-2/" title="View all posts in Usability" rel="category tag">Usability</a>.        <span class="edit-link"><a class="post-edit-link" href="http://kev.inburke.com/wp-admin/post.php?post=2999&amp;action=edit" title="Edit Post">Edit</a></span>
+    </footer><!-- .entry-meta -->
+</article><!-- #post-2999 -->
+
+          </div>
+        </div>
+
+      &copy; 2006 - <?php echo date('Y'); ?> Kevin Burke. <br />
+      <a href="http://github.com/kevinburke/2013">source code</a>
+
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+      <script src="js/plugins.js"></script>
+      <script src="js/main.js"></script>
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+      <script>
+        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+          g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+          s.parentNode.insertBefore(g,s)}(document,'script'));
+      </script>
+    </body>
+</html>
