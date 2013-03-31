@@ -94,28 +94,59 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+ul {
+    padding-left: 0;
+}
+
 $backing-color: #01D2FF;
+$list-color-1: #E67E22;
+$list-color-2: #1ABC9C;
+
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|Istok+Web|Oxygen:300,700,400|Varela+Round|Chivo|Telex);
 
 body {
     background-color: $backing-color;
     color: #fff;
     font-family: 'Oxygen', 'Ubuntu', 'Helvetica Neue', Helvetica, arial, sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     max-width: 320px;
 }
 
 #title {
-    border-bottom: 1px solid #fff;
     text-align: center;
     margin: 0;
+    background-color: #000;
 }
 
-.blurb {
-
+#logo {
+    float: left;
+    margin-right: 10px;
 }
 
+#blurb {
+    padding: 10px 5px;
+}
 
+#blurb-text {
+    /*float: left;*/
+}
+
+#top-posts {
+    background-color: $list-color-1;
+}
+
+#start-here {
+    background-color: $list-color-2;
+}
+
+.list-toggle {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.accordion-heading {
+    padding: 5px;
+}
 
 
 
