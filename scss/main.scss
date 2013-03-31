@@ -144,6 +144,7 @@ code {
 
 #blurb {
     padding: 10px 5px;
+    color: $alternate-text-color;
 }
 
 #top-posts {
@@ -182,11 +183,11 @@ code {
     padding: 8px 10px;
     margin: 0;
 
-    background: url("../img/toggle.png") no-repeat right center;
 }
 
 .accordion-items {
     margin: 0;
+    padding-bottom: 7px;
 
     li {
         border-bottom: 1px solid #fff;
@@ -206,6 +207,10 @@ code {
 @media (max-width: 767px) { 
     .list-toggle {
         cursor: pointer;
+    }
+
+    .toggle {
+        background: url("../img/toggle.png") no-repeat right center;
     }
 }
 
