@@ -97,6 +97,7 @@ textarea {
 $top-color: #01D2FF;
 $backing-color: #fff;
 $text-color: #fff;
+$alternate-text-color: #222;
 $list-color-1: #E67E22;
 $list-color-2: #1ABC9C;
 $list-color-3: #8E44AD;
@@ -116,6 +117,10 @@ body {
 
 ul {
     padding-left: 0;
+}
+
+#blog {
+    color: $alternate-text-color;
 }
 
 #title {
