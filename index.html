@@ -12,6 +12,7 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
+        <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" />
         <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" />
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
@@ -22,6 +23,7 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
+      <div class="container">
 
         <h1 id="title">KEVIN BURKE</h1>
         <div id="blurb" class="clearfix">
@@ -32,78 +34,85 @@
             about me</a>
           </span>
         </div>
-        <ul id="top-posts" class="accordion">
-          <li class="list-toggle">
-            <h3 class="accordion-heading">Most Popular</h3>
-            <ul class="accordion-items hidden-phone">
-              <li><a href="/kevin/open-season-on-virgin-mobile-customer-data/">Virgin Mobile fails web security 101, leaves 6 million subscriber accounts wide open</a>
-              <li><a href="/kevin/how-not-to-ask-questions-at-conference/">How not to ask questions at a conference</a>
-              <li><a href="/kevin/site-redesign/">Tips for designing your personal site</a>
-              <li><a href="/kevin/the-best-ways-to-find-bugs-in-your-code/">Why code review beats testing</a>
-              <li><a href="/kevin/site-redesign/">Reddit's database has two tables</a>
-              <li><a href="http://kevinburke.bitbucket.org/markdowncss/">Markdown.css - let's make the Web prettier</a>
-            </ul>
-          </li>
-        </ul>
-        <ul id="start-here" class="accordion">
-          <li class="list-toggle">
-            <h3 class="accordion-heading">Start Here</h3>
-            <ul class="accordion-items hidden-phone">
-              <li><a href="/kevin/the-real-reasons-you-cant-figure-out-how-to-code/">How beginning programmers should read a quickstart guide</a>
-              <li><a href="http://www.twilio.com/engineering/2012/01/18/dont-skimp-on-documentation">How to write documentation for users that don't read</a>
-              <li><a href="/kevin/the-best-ways-to-find-bugs-in-your-code/">Designing an API Client Library</a>
-              <li><a href="/kevin/how-to-talk-to-recruiters-at-a-career-fair/">How to talk to career fair recruiters</a>
-              <li><a href="/kevin/cmcs-website-redesign-the-good-the-bad-and-the-ugly/">Breaking down my school's website redesign</a>
-            </ul>
-
-          </li>
-        </ul>
-        <ul id="contact" class="accordion">
-          <li class="list-toggle">
-            <h3 class="accordion-heading">Social</h3>
-            <ul class="accordion-items hidden-phone">
-              <li><a href="mailto:kev@inburke.com">Email</a>
-              <li><a href="http://twitter.com/ekrubnivek">Twitter</a>
-              <li><a href="http://github.com/kevinburke">Github</a>
-              <li><a href="http://bitbucket.org/kevinburke">Bitbucket</a>
-              <li><a href="https://plus.google.com/111464885298476091898">Google+</a>
-              <li><a href="http://linkedin.com/in/ekrub">LinkedIn</a>
-            </ul>
-
-          </li>
-        </ul>
-        <ul id="recent-posts" class="accordion">
-          <li class="list-toggle">
-            <h3 class="accordion-heading">Recent Posts</h3>
-          </li>
-        </ul>
-        <ul id="trivia" class="accordion">
-          <li class="list-toggle">
-            <h3 class="accordion-heading">Trivia</h3>
-            <ul class="accordion-items hidden-phone">
-              <li>has used a DVORAK keyboard since high school</li>
-              <li>downloads email only 
-              <a href="http://kev.inburke.com/kevin/escaping-from-your-email/">
-                once every 4 hours
-              </a>
-              </li>
-              <li>started a Facebook group that was 
-              <a href="https://www.economist.com/finance/displaystory.cfm?story_id=E1_RTVDTJR">
-                featured in the Economist
-              </a>
-              </li>
-              <li>emailed his entire high school about how to use apostrophes</li>
-              <li>made a 10-minute video on 
-              <a href='http://www.youtube.com/watch?v=sdMoE7mr9H0'>
-                myths about foreign aid
-              </a>
+        <div class="row">
+          <div class="span6">
+            <ul id="top-posts" class="accordion">
+              <li class="list-toggle">
+              <h3 class="accordion-heading">Most Popular</h3>
+              <ul class="accordion-items hidden-phone">
+                <li><a href="/kevin/open-season-on-virgin-mobile-customer-data/">Virgin Mobile fails web security 101, leaves 6 million subscriber accounts wide open</a>
+                <li><a href="/kevin/how-not-to-ask-questions-at-conference/">How not to ask questions at a conference</a>
+                <li><a href="/kevin/site-redesign/">Tips for designing your personal site</a>
+                <li><a href="/kevin/the-best-ways-to-find-bugs-in-your-code/">Why code review beats testing</a>
+                <li><a href="/kevin/site-redesign/">Reddit's database has two tables</a>
+                <li><a href="http://kevinburke.bitbucket.org/markdowncss/">Markdown.css - let's make the Web prettier</a>
+              </ul>
               </li>
             </ul>
-          </li>
-        </ul>
-        &copy; 2006 - <?php echo date('Y'); ?> Kevin Burke. <br />
-        <a href="http://github.com/kevinburke/2013">source code</a>
+            <ul id="start-here" class="accordion">
+              <li class="list-toggle">
+                <h3 class="accordion-heading">Start Here</h3>
+                <ul class="accordion-items hidden-phone">
+                  <li><a href="/kevin/the-real-reasons-you-cant-figure-out-how-to-code/">How beginning programmers should read a quickstart guide</a>
+                  <li><a href="http://www.twilio.com/engineering/2012/01/18/dont-skimp-on-documentation">How to write documentation for users that don't read</a>
+                  <li><a href="/kevin/the-best-ways-to-find-bugs-in-your-code/">Designing an API Client Library</a>
+                  <li><a href="/kevin/how-to-talk-to-recruiters-at-a-career-fair/">How to talk to career fair recruiters</a>
+                  <li><a href="/kevin/cmcs-website-redesign-the-good-the-bad-and-the-ugly/">Breaking down my school's website redesign</a>
+                </ul>
 
+              </li>
+            </ul>
+            <ul id="contact" class="accordion">
+              <li class="list-toggle">
+                <h3 class="accordion-heading">Social</h3>
+                <ul class="accordion-items hidden-phone">
+                  <li><a href="mailto:kev@inburke.com">Email</a>
+                  <li><a href="http://twitter.com/ekrubnivek">Twitter</a>
+                  <li><a href="http://github.com/kevinburke">Github</a>
+                  <li><a href="http://bitbucket.org/kevinburke">Bitbucket</a>
+                  <li><a href="https://plus.google.com/111464885298476091898">Google+</a>
+                  <li><a href="http://linkedin.com/in/ekrub">LinkedIn</a>
+                </ul>
+
+              </li>
+            </ul>
+          </div>
+          <div class="span6">
+          <ul id="recent-posts" class="accordion">
+            <li class="list-toggle">
+              <h3 class="accordion-heading">Recent Posts</h3>
+            </li>
+          </ul>
+          <ul id="trivia" class="accordion">
+            <li class="list-toggle">
+              <h3 class="accordion-heading">Trivia</h3>
+              <ul class="accordion-items hidden-phone">
+                <li>has used a DVORAK keyboard since high school</li>
+                <li>downloads email only 
+                <a href="http://kev.inburke.com/kevin/escaping-from-your-email/">
+                  once every 4 hours
+                </a>
+                </li>
+                <li>started a Facebook group that was 
+                <a href="https://www.economist.com/finance/displaystory.cfm?story_id=E1_RTVDTJR">
+                  featured in the Economist
+                </a>
+                </li>
+                <li>emailed his entire high school about how to use apostrophes</li>
+                <li>made a 10-minute video on 
+                <a href='http://www.youtube.com/watch?v=sdMoE7mr9H0'>
+                  myths about foreign aid
+                </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      &copy; 2006 - <?php echo date('Y'); ?> Kevin Burke. <br />
+      <a href="http://github.com/kevinburke/2013">source code</a>
+
+    </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
