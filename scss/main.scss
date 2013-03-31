@@ -119,14 +119,22 @@ ul {
     padding-left: 0;
 }
 
-#blog {
-    color: $alternate-text-color;
+// bootstrap's code styling is awful
+pre, code {
+    font-family: Consolas, Menlo, Andale Mono, Monaco, monospace;
+    color: black;
+}
+
+code {
+    border: 0;
+    background: none;
 }
 
 #title {
     text-align: center;
     margin: 0;
     background-color: $top-color;
+    color: $text-color;
 }
 
 #logo {
