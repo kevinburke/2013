@@ -114,7 +114,7 @@ body {
     color: $text-color;
     font-family: 'Oxygen', 'Ubuntu', 'Helvetica Neue', Helvetica, arial, sans-serif;
     font-weight: 400;
-    max-width: 320px;
+    padding: 0;
 }
 
 #title {
@@ -130,10 +130,6 @@ body {
 
 #blurb {
     padding: 10px 5px;
-}
-
-#blurb-text {
-    /*float: left;*/
 }
 
 #top-posts {
@@ -171,7 +167,6 @@ body {
 }
 
 .accordion-items {
-    display: none;
     margin: 0;
 
     li {
