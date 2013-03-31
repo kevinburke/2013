@@ -12,14 +12,11 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
+        <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" />
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -28,7 +25,7 @@
 
         <h1 id="title">KEVIN BURKE</h1>
         <div id="blurb" class="clearfix">
-          <img id="logo" src="img/kevin-mask-small.png" alt="Kevin Burke" />
+          <img id="logo" src="img/kevin-mask-blue.png" alt="Kevin Burke" />
           <span id="blurb-text">
             Hey, I'm Kevin. I build great experiences. Currently I work at <a
             href="http://www.twilio.com">Twilio</a>. <a href="/about">More
@@ -38,7 +35,7 @@
         <ul id="top-posts" class="accordion">
           <li class="list-toggle">
             <h3 class="accordion-heading">Most Popular</h3>
-            <ul class="accordion-items">
+            <ul class="accordion-items hidden-phone">
               <li><a href="/kevin/open-season-on-virgin-mobile-customer-data/">Virgin Mobile fails web security 101, leaves 6 million subscriber accounts wide open</a>
               <li><a href="/kevin/how-not-to-ask-questions-at-conference/">How not to ask questions at a conference</a>
               <li><a href="/kevin/site-redesign/">Tips for designing your personal site</a>
@@ -51,7 +48,7 @@
         <ul id="start-here" class="accordion">
           <li class="list-toggle">
             <h3 class="accordion-heading">Start Here</h3>
-            <ul class="accordion-items">
+            <ul class="accordion-items hidden-phone">
               <li><a href="/kevin/the-real-reasons-you-cant-figure-out-how-to-code/">How beginning programmers should read a quickstart guide</a>
               <li><a href="http://www.twilio.com/engineering/2012/01/18/dont-skimp-on-documentation">How to write documentation for users that don't read</a>
               <li><a href="/kevin/the-best-ways-to-find-bugs-in-your-code/">Designing an API Client Library</a>
@@ -64,7 +61,7 @@
         <ul id="contact" class="accordion">
           <li class="list-toggle">
             <h3 class="accordion-heading">Social</h3>
-            <ul class="accordion-items">
+            <ul class="accordion-items hidden-phone">
               <li><a href="mailto:kev@inburke.com">Email</a>
               <li><a href="http://twitter.com/ekrubnivek">Twitter</a>
               <li><a href="http://github.com/kevinburke">Github</a>
@@ -83,7 +80,7 @@
         <ul id="trivia" class="accordion">
           <li class="list-toggle">
             <h3 class="accordion-heading">Trivia</h3>
-            <ul class="accordion-items">
+            <ul class="accordion-items hidden-phone">
               <li>has used a DVORAK keyboard since high school</li>
               <li>downloads email only 
               <a href="http://kev.inburke.com/kevin/escaping-from-your-email/">
@@ -107,6 +104,10 @@
         &copy; 2006 - <?php echo date('Y'); ?> Kevin Burke. <br />
         <a href="http://github.com/kevinburke/2013">source code</a>
 
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
