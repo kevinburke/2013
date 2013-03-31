@@ -1,0 +1,13 @@
+- implement twitter client
+- flush out projects pages
+- implement syntax highlighting for code snippets
+- embed everything in wordpress
+- retrieve latest posts
+- fix title
+- become more happy with color choices
+- fix accordion in ios mode to slide
+- load bootstrap css from a cdn
+- choose a link color
+- implement different social div for wide views
+
+- write about everything
