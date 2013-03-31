@@ -98,15 +98,20 @@ ul {
     padding-left: 0;
 }
 
-$backing-color: #01D2FF;
+$top-color: #01D2FF;
+$backing-color: #fff;
+$text-color: #fff;
 $list-color-1: #E67E22;
 $list-color-2: #1ABC9C;
+$list-color-3: #8E44AD;
+$list-color-4: #E74C3C;
+$list-color-5: #34495E;
 
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|Istok+Web|Oxygen:300,700,400|Varela+Round|Chivo|Telex);
 
 body {
     background-color: $backing-color;
-    color: #fff;
+    color: $text-color;
     font-family: 'Oxygen', 'Ubuntu', 'Helvetica Neue', Helvetica, arial, sans-serif;
     font-weight: 400;
     max-width: 320px;
@@ -115,7 +120,7 @@ body {
 #title {
     text-align: center;
     margin: 0;
-    background-color: #000;
+    background-color: $top-color;
 }
 
 #logo {
@@ -139,13 +144,49 @@ body {
     background-color: $list-color-2;
 }
 
+#contact {
+    background-color: $list-color-3;
+}
+
+#recent-posts {
+    background-color: $list-color-4;
+}
+
+#trivia {
+    background-color: $list-color-5;
+}
+
 .list-toggle {
     list-style-type: none;
     cursor: pointer;
 }
 
+.accordion {
+    margin: 0;
+}
+
 .accordion-heading {
-    padding: 5px;
+    padding: 8px 10px;
+    margin: 0;
+}
+
+.accordion-items {
+    display: none;
+    margin: 0;
+
+    li {
+        border-bottom: 1px solid #fff;
+        padding: 5px;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
 }
 
 
