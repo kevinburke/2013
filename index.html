@@ -15,6 +15,11 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -22,15 +27,41 @@
         <![endif]-->
 
         <h1 id="title">KEVIN BURKE</h1>
-        <div class="blurb">
-          <img src="img/kevin-mask.png" alt="Kevin Burke" />
+        <div id="blurb" class="clearfix">
+          <img id="logo" src="img/kevin-mask-small.png" alt="Kevin Burke" />
+          <span id="blurb-text">
+            Hey, I'm Kevin. I build great experiences. Currently I work at <a
+            href="http://www.twilio.com">Twilio</a>. <a href="/about">More
+            about me</a>
+          </span>
         </div>
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <ul id="top-posts" class="accordion">
+          <li class="list-toggle">
+            <h3 class="accordion-heading">Top Posts</h3>
+            <ul>
+              <li><a href="/kevin/open-season-on-virgin-mobile-customer-data/">Virgin Mobile fails web security 101, leaves 6 million subscriber accounts wide open</a>
+              <li><a href="/kevin/how-not-to-ask-questions-at-conference/">How not to ask questions at a conference</a>
+              <li><a href="/kevin/site-redesign/">Tips for designing your personal site</a>
+              <li><a href="/kevin/the-best-ways-to-find-bugs-in-your-code/">Why code review beats testing</a>
+              <li><a href="/kevin/site-redesign/">Reddit's database has two tables</a>
+              <li><a href="http://kevinburke.bitbucket.org/markdowncss/">Markdown.css - let's make the Web prettier</a>
+            </ul>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+          </li>
+        </ul>
+        <ul id="start-here" class="accordion">
+          <li class="list-toggle">
+            <h3 class="accordion-heading">Start Here</h3>
+            <ul>
+              <li><a href="/kevin/the-real-reasons-you-cant-figure-out-how-to-code/">How beginning programmers should read a quickstart guide</a>
+              <li><a href="http://www.twilio.com/engineering/2012/01/18/dont-skimp-on-documentation">How to write documentation for users that don't read</a>
+              <li><a href="/kevin/the-best-ways-to-find-bugs-in-your-code/">Designing an API Client Library</a>
+              <li><a href="/kevin/how-to-talk-to-recruiters-at-a-career-fair/">How to talk to career fair recruiters</a>
+              <li><a href="/kevin/cmcs-website-redesign-the-good-the-bad-and-the-ugly/">Breaking down my school's website redesign</a>
+            </ul>
+
+          </li>
+        </ul>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
