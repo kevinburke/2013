@@ -1,7 +1,6 @@
 - implement syntax highlighting for code snippets
 - embed everything in wordpress
 - retrieve latest posts
-- fix title
 - become more happy with color choices
 - fix accordion in ios mode to slide
 - choose a link color
@@ -10,5 +9,7 @@
 - try out just putting the headings in bubbles
 - figure out projects pages
 - style the comment section
+- flush out the sidebar
+- make image clickable
 
 - write about everything
