@@ -1,13 +1,14 @@
-- flush out projects pages
 - implement syntax highlighting for code snippets
 - embed everything in wordpress
 - retrieve latest posts
 - fix title
 - become more happy with color choices
 - fix accordion in ios mode to slide
-- load bootstrap css from a cdn
 - choose a link color
 - implement different social div for wide views
-- add icons for bubbles
+- add icons for the bubbles
+- try out just putting the headings in bubbles
+- figure out projects pages
+- style the comment section
 
 - write about everything
