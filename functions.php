@@ -32,7 +32,7 @@ function flatui_js() {
 function posted_on() {
     printf( __( '<span class="sep">Posted on </span><a href="%1$s"
 title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s"
-pubdate>%4$s</time></a>', 'twentyeleven' ),
+pubdate>%4$s</time></a>', 'twentytwelve' ),
         esc_url( get_permalink() ),
         esc_attr( get_the_time() ),
         esc_attr( get_the_date( 'c' ) ),

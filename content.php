@@ -38,7 +38,6 @@
 			<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'twentytwelve' ), 'after' => '</div>' ) ); ?>
 		</div><!-- .entry-content -->
 		<?php endif; ?>
-
 		<footer class="entry-meta">
 			<span class="cat-links">
 			<?php
