@@ -14,11 +14,10 @@ jQuery(document).ready(function($) {
             }).css('zoom', '1');
         } );
     }
-
 });
 
 var checkTwitterFrame = function(callback) {
-    if ($('.twitter-timeline-rendered').length > 0) {
+    if (jQuery('.twitter-timeline-rendered').length > 0) {
         callback();
     } else {
         setTimeout(function() {
@@ -28,7 +27,7 @@ var checkTwitterFrame = function(callback) {
 };
 
 checkTwitterFrame(function() {
-    $('.twitter-timeline-rendered').addClass('hidden-phone');
+    jQuery('.twitter-timeline-rendered').addClass('hidden-phone');
 });
 
 var options = {
