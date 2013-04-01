@@ -104,6 +104,7 @@ $list-color-3: #8E44AD;
 $list-color-4: #E74C3C;
 $list-color-5: #34495E;
 $list-color-6: #F1C40F;
+$twitter-color: #2C3E50;
 
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|Istok+Web|Oxygen:300,700,400|Varela+Round|Chivo|Telex);
 
@@ -171,6 +172,10 @@ code {
     background-color: $list-color-6;
 }
 
+#twitter {
+    background-color: $twitter-color;
+}
+
 .project-image {
     float: left;
 }
@@ -224,12 +229,20 @@ code {
     .toggle {
         background: url("../img/toggle.png") no-repeat right center;
     }
+
+    .twitter-timeline {
+        width: 100%;
+    }
 }
 
 @media (min-width: 768px) { 
     .accordion {
         margin-bottom: 20px;
         border-radius: 5px;
+    }
+
+    .twitter-timeline {
+        width: 570px;
     }
 }
 

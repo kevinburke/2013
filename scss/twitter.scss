@@ -1,0 +1,59 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|Istok+Web|Oxygen:300,700,400|Varela+Round|Chivo|Telex);
+
+$twitter-color: #2C3E50;
+
+html {
+	color: #fff !important;
+}
+
+@media (max-width: 767px) { 
+	html {
+		width: 100%;
+	}
+}
+
+@media (min-width: 768px) { 
+	html {
+		width: 560px;
+	}
+}
+
+.root.timeline.twitter-timeline {
+	background-color: $twitter-color;
+
+	p, a, ol, ul, li {
+		font-family: 'Oxygen', 'Ubuntu', 'Helvetica Neue', Helvetica, arial, sans-serif;
+	}
+}
+
+.root.twitter-timeline {
+	.tweet {
+		padding: 7px 10px;
+		border-bottom: 1px solid #fff;
+	}
+
+	a, 
+	a:visited
+	{
+		text-decoration: underline;
+	}
+
+	.u-url,
+	.expand,
+	.profile {
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+			color: #fff;
+		}
+	}
+
+}
+
+.u-photo,
+.full-name,
+.inline-media
+{
+	display: none;
+}
