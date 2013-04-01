@@ -24,11 +24,7 @@
 <![endif]-->
 <div id="page" class="container hfeed site">
 <h1 id="title">KEVIN BURKE</h1>
-<div id="blurb" class="clearfix">
-	<img id="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/kevin-mask-blue.png" alt="Kevin Burke" />
-  <span id="blurb-text">
-	Hey, I'm Kevin. I build great experiences. Currently I work at <a
-	href="https://www.twilio.com">Twilio</a>. <a href="/about">More
-	about me</a>
-  </span>
-</div>
+<?php if (is_front_page()) {
+	include_once('blurb.html');
+}
+?>
