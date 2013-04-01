@@ -1,4 +1,3 @@
-- implement twitter client
 - flush out projects pages
 - implement syntax highlighting for code snippets
 - embed everything in wordpress
@@ -9,5 +8,6 @@
 - load bootstrap css from a cdn
 - choose a link color
 - implement different social div for wide views
+- add icons for bubbles
 
 - write about everything
