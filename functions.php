@@ -16,8 +16,8 @@ function flatui_css() {
 
 function flatui_js() {
 	wp_enqueue_script('modernizr.js', get_stylesheet_directory_uri() . "/js/vendor/modernizr-2.6.2.min.js", array(), '1.0');
+	wp_enqueue_script('customize-twitter-1.1.min.js', get_stylesheet_directory_uri() . '/js/vendor/customize-twitter-1.1.min.js', array(), '1.0', true);
 	wp_enqueue_script('main.js', get_stylesheet_directory_uri() . '/js/main.js', array('jquery'), '1.0', true);
 	wp_enqueue_script('plugins.js', get_stylesheet_directory_uri() . '/js/plugins.js', array('jquery'), '1.0', true);
-	wp_enqueue_script('customize-twitter-1.1.min.js', get_stylesheet_directory_uri() . '/js/vendor/customize-twitter-1.1.min.js', array(), '1.0', true);
 }
 
