@@ -1,3 +1,9 @@
+!function(d,s,id){
+    var js,fjs=d.getElementsByTagName(s)[0]; if(!d.getElementById(id)){
+        js=d.createElement(s);js.id=id; js.src="//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js,fjs);
+    }
+}(document,"script","twitter-wjs");
+
 jQuery(document).ready(function($) {
     if (jQuery('.accordion')[0]) {
         jQuery('.accordion').find('h3').click(function(e) {
@@ -29,3 +35,8 @@ var options = {
     "url": "css/twitter.css"
 };
 CustomizeTwitterWidget(options);
+
+var _gaq=[['_setAccount','UA-566397-2'],['_trackPageview']];
+(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+s.parentNode.insertBefore(g,s)}(document,'script'));
