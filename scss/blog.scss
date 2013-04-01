@@ -57,3 +57,15 @@ $alternate-text-color: #222;
 #blurb {
     margin-top: 22px;
 }
+
+#comments {
+	textarea {
+		width: auto;
+	}
+}
+
+.form-allowed-tags {
+	code {
+		white-space: normal;
+	}
+}

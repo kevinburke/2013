@@ -131,6 +131,38 @@ code {
     background: none;
 }
 
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input
+{
+    font-family: 'Oxygen', 'Ubuntu', 'Helvetica Neue', Helvetica, arial, sans-serif;
+    border: 2px solid $top-color;
+    outline: none;
+    border-radius: 5px;
+    transition:  0s  0s all ease;
+    box-shadow: none;
+    font-size: 14px;
+    padding: 5px;
+
+    &:focus {
+        border-color: $list-color-1;
+        box-shadow: none;
+    }
+}
+
 #title {
     text-align: center;
     margin: 0;
