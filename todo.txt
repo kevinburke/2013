@@ -1,5 +1,4 @@
 - implement syntax highlighting for code snippets
-- embed everything in wordpress
 - retrieve latest posts
 - become more happy with color choices
 - fix accordion in ios mode to slide
@@ -7,9 +6,8 @@
 - implement different social div for wide views
 - add icons for the bubbles
 - try out just putting the headings in bubbles
-- figure out projects pages
-- style the comment section
-- flush out the sidebar
 - make image clickable
+
+- figure out projects pages
 
 - write about everything
