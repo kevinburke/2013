@@ -1,3 +1,4 @@
+@import 'colors.scss';
 $alternate-text-color: #222;
 
 .container {
@@ -7,6 +8,11 @@ $alternate-text-color: #222;
 /**
  * Overriding Boostrap default layout styles
  */
+
+.blog-content {
+	padding: 10px;
+	box-sizing: border-box;
+}
 
 .entry-content {
 
@@ -42,12 +48,6 @@ $alternate-text-color: #222;
     font-size: 2.5em;
 }
 
-@media (min-width: 768px) { 
-    /*.entry-title {*/
-        /*width: 760px;*/
-    /*}*/
-}
-
 .entry-meta {
     font-size: 12px;
     color: #666;
@@ -68,4 +68,79 @@ $alternate-text-color: #222;
 	code {
 		white-space: normal;
 	}
+}
+
+/**
+ * Sidebar settings
+ */
+.sidebar {
+	.genericon {
+		font: normal 32px/20px 'Genericons';
+		padding: 10px;
+		vertical-align: middle;
+		color: #fff;
+		width: auto;
+		height: auto;
+	}
+
+}
+
+.link-menu {
+	li {
+		list-style-type: none;
+		margin-bottom: 20px;
+		border-radius: 5px;
+
+		a {
+			padding-top: 3px;
+			display: block;
+			color: #fff;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+/**
+ * Comments
+ */
+.commentlist {
+	padding-left: 0;
+}
+
+.comment-meta {
+	$avatar-width: 44px;
+	$avatar-padding: 11px;
+
+	img {
+		float: left;
+	}
+	
+	cite {
+		display: block;
+		margin-left: $avatar-width + $avatar-padding;
+		/*a {*/
+			/*color: $alternate-text-color;*/
+		/*}*/
+
+		span {
+			background-color: $list-color-5;
+			border-radius: 3px;
+			color: #fff;
+			font-size: 11px;
+			padding: 4px;
+			margin-left: 10px;
+		}
+	}
+
+	time {
+		font-size: 12px;
+		margin-left: $avatar-padding;
+		color: $alternate-text-color;
+	}
+}
+
+.reply {
+	font-size: 12px;
 }

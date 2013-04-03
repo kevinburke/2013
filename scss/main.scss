@@ -94,17 +94,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-$top-color: #01D2FF;
-$backing-color: #fff;
-$text-color: #fff;
-$alternate-text-color: #222;
-$list-color-1: #E67E22;
-$list-color-2: #1ABC9C;
-$list-color-3: #8E44AD;
-$list-color-4: #E74C3C;
-$list-color-5: #34495E;
-$list-color-6: #F1C40F;
-$twitter-color: #2C3E50;
+@import 'colors.scss';
 
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|Istok+Web|Oxygen:300,700,400|Varela+Round|Chivo|Telex);
 
