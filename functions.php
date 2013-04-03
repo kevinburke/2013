@@ -17,6 +17,9 @@ function flatui_css() {
 	if (!is_front_page()) {
 		wp_register_style('flatui-blog.css', get_stylesheet_directory_uri() . '/css/blog.css');
 		wp_enqueue_style('flatui-blog.css'); 
+
+		wp_register_style('genericons.css', get_stylesheet_directory_uri() . '/css/genericons.css');
+		wp_enqueue_style('genericons.css'); 
 	}
 }
 
