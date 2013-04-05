@@ -10,6 +10,8 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+@import 'colors.scss';
+
 html,
 button,
 input,
@@ -31,13 +33,14 @@ body {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: $list-color-1;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: $list-color-1;
     text-shadow: none;
+
 }
 
 /*
@@ -94,7 +97,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-@import 'colors.scss';
 
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|Istok+Web|Oxygen:300,700,400|Varela+Round|Chivo|Telex);
 
@@ -119,6 +121,22 @@ pre, code {
 code {
     border: 0;
     background: none;
+}
+
+a {
+	color: $top-color;
+
+	&:hover {
+		color: $list-color-1;
+	}
+
+	&:active {
+		color: $list-color-6;
+	}
+
+	&::selection {
+		color: $list-color-3;
+	}
 }
 
 textarea,
