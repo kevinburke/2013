@@ -10,6 +10,15 @@ html {
 	html {
 		width: 100%;
 	}
+
+    .h-feed {
+        height: 500px;
+        overflow: hidden;
+    }
+
+    .timeline .load-more {
+        display: none;
+    }
 }
 
 @media (min-width: 768px) { 

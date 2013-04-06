@@ -14,9 +14,16 @@ jQuery(document).ready(function($) {
         jQuery('.accordion').find('h3').click(function(e) {
             e.preventDefault();
             var h3 = jQuery(this);
-            h3.next().slideToggle('slow', function() {
-                h3.siblings('ul, iframe').toggleClass('hidden-phone');
-            }).css('zoom', '1');
+            var next = h3.next();
+            if (next.hasClass('hidden-phone')) {
+                next.hide();
+                next.toggleClass('hidden-phone').slideDown('slow');
+            } else {
+                next.show();
+                next.slideUp('slow', function() {
+                    $(this).addClass('hidden-phone');
+                });
+            }
         } );
     }
 });
