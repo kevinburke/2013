@@ -19,11 +19,9 @@
     list-style-type: none;
 
     li {
-        /*border-bottom: 1px solid #eee;*/
         background: url("../img/gradient-line.png") no-repeat bottom center;
 
         &:last-child {
-            border-bottom: none;
             background: none;
         }
 
