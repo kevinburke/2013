@@ -43,3 +43,39 @@ pubdate>%4$s</time></a>', 'twentytwelve' ),
     );
 }
 
+/**
+ * Print out the posts for a category
+ */
+function output_posts_for_cat( $category ) {
+    global $post;
+    $args = array(
+        'numberposts'   => 4,
+        'category'      => $category
+    );
+    $the_array = get_posts( $args );
+    foreach ( $the_array as $post ) : setup_postdata( $post ) ?>
+        <li>
+            <a href="<?php the_permalink(); ?>">
+                <?php the_title(); ?>
+            </a>
+        </li>
+    <?php endforeach;
+}
+
+function get_recent_posts($classname) {
+	$recent_posts = wp_get_recent_posts();
+	if (empty($recent_posts)) {
+		return;
+	}
+	?><ul class="<?php echo $classname; ?>"><?php
+	foreach( $recent_posts as $recent ) { ?>
+		<li>
+			<a href="<?php echo get_permalink($recent["ID"]); ?>" 
+				title="Look <?php echo esc_attr($recent["post_title"]); ?>">
+				<?php echo $recent["post_title"]; ?>
+			</a>
+		</li>
+	<?php } ?>
+	</ul>
+<?php
+}

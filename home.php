@@ -66,6 +66,7 @@ get_header();
   <ul id="recent-posts" class="accordion">
 	<li class="list-toggle">
 	  <h3 class="accordion-heading toggle">Recent Posts</h3>
+	  <?php get_recent_posts("accordion-items"); ?>
 	</li>
   </ul>
   <ul id="projects" class="accordion">
