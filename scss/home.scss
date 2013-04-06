@@ -8,22 +8,26 @@
     padding: 8px 10px;
     margin: 0;
     cursor: pointer;
+    color: $text-color;
 }
 
 .accordion-items {
-    margin: 0;
+    margin: 1em 0 0 1em;
     padding-bottom: 7px;
     cursor: pointer;
+    color: $top-color;
+    list-style-type: none;
 
     li {
-        border-bottom: 1px solid #fff;
+        /*border-bottom: 1px solid #eee;*/
+        background: url("../img/gradient-line.png") no-repeat bottom center;
 
         &:last-child {
             border-bottom: none;
+            background: none;
         }
 
         a {
-            color: #fff;
             text-decoration: none;
             padding: 5px;
             cursor: pointer;
@@ -73,7 +77,10 @@
 @media (min-width: 768px) { 
     .accordion {
         margin-bottom: 20px;
-        border-radius: 5px;
+    }
+
+    .accordion-heading {
+        border-radius: 6px;
     }
 }
 
