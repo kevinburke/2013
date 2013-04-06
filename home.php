@@ -45,7 +45,6 @@ get_header();
 		  <li><a href="https://plus.google.com/111464885298476091898">Google+</a>
 		  <li><a href="http://linkedin.com/in/ekrub">LinkedIn</a>
 		</ul>
-
 	  </li>
 	</ul>
   </div>
