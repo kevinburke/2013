@@ -1,0 +1,85 @@
+@import 'colors.scss';
+
+.accordion {
+    margin: 0;
+}
+
+.accordion-heading {
+    padding: 8px 10px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.accordion-items {
+    margin: 0;
+    padding-bottom: 7px;
+    cursor: pointer;
+
+    li {
+        border-bottom: 1px solid #fff;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px;
+            cursor: pointer;
+            display: block;
+        }
+    }
+}
+
+#logo {
+    float: left;
+    margin-right: 10px;
+}
+
+#blurb {
+    padding: 10px 5px;
+    color: $alternate-text-color;
+}
+
+#top-posts {
+    background-color: $list-color-1;
+}
+
+#start-here {
+    background-color: $list-color-2;
+}
+
+#contact {
+    background-color: $list-color-3;
+}
+
+#recent-posts {
+    background-color: $list-color-4;
+}
+
+#trivia {
+    background-color: $list-color-5;
+}
+
+#projects {
+    background-color: $list-color-6;
+}
+
+#twitter {
+    background-color: $twitter-color;
+}
+
+@media (min-width: 768px) { 
+    .accordion {
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+}
+
+.genericon {
+    font: normal 32px/9px 'Genericons';
+    vertical-align: middle;
+    margin-right: 20px;
+}
+

@@ -178,82 +178,9 @@ input[type="color"],
     color: $text-color;
 }
 
-#logo {
-    float: left;
-    margin-right: 10px;
-}
-
-#blurb {
-    padding: 10px 5px;
-    color: $alternate-text-color;
-}
-
-#top-posts {
-    background-color: $list-color-1;
-}
-
-#start-here {
-    background-color: $list-color-2;
-}
-
-#contact {
-    background-color: $list-color-3;
-}
-
-#recent-posts {
-    background-color: $list-color-4;
-}
-
-#trivia {
-    background-color: $list-color-5;
-}
-
-#projects {
-    background-color: $list-color-6;
-}
-
-#twitter {
-    background-color: $twitter-color;
-}
 
 .project-image {
     float: left;
-}
-
-.list-toggle {
-    list-style-type: none;
-}
-
-.accordion {
-    margin: 0;
-}
-
-.accordion-heading {
-    padding: 8px 10px;
-    margin: 0;
-
-}
-
-.accordion-items {
-    margin: 0;
-    padding-bottom: 7px;
-    cursor: pointer;
-
-    li {
-        border-bottom: 1px solid #fff;
-
-        &:last-child {
-            border-bottom: none;
-        }
-
-        a {
-            color: #fff;
-            text-decoration: none;
-            padding: 5px;
-            cursor: pointer;
-            display: block;
-        }
-    }
 }
 
 .nopointer {
@@ -262,10 +189,6 @@ input[type="color"],
 }
 
 @media (max-width: 767px) { 
-    .list-toggle {
-        cursor: pointer;
-    }
-
     .toggle {
         background: url("../img/toggle.png") no-repeat right center;
     }
@@ -276,17 +199,10 @@ input[type="color"],
 }
 
 @media (min-width: 768px) { 
-    .accordion {
-        margin-bottom: 20px;
-        border-radius: 5px;
-    }
-
     .twitter-timeline {
         width: 570px;
     }
 }
-
-
 
 
 
