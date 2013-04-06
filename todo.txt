@@ -1,9 +1,7 @@
 - implement syntax highlighting for code snippets
 - become more happy with color choices
 - implement different social div for wide views
-- add icons for the bubbles
 - try out just putting the headings in bubbles
-- add top posts bit
 
 
 later:
