@@ -25,6 +25,6 @@
 <div id="page" class="container hfeed site">
 <h1 id="title">KEVIN BURKE</h1>
 <?php if (is_front_page()) {
-	include_once('blurb.html');
+	include_once('blurb.php');
 }
 ?>

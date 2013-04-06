@@ -12,14 +12,17 @@ function flatui_css() {
 	wp_register_style('flatui-normalize.css', get_stylesheet_directory_uri() . '/css/normalize.css');
 	wp_enqueue_style('flatui-normalize.css'); 
 
+	wp_register_style('genericons.css', get_stylesheet_directory_uri() . '/css/genericons.css');
+	wp_enqueue_style('genericons.css'); 
+
 	wp_register_style('flatui-main.css', get_stylesheet_directory_uri() . '/css/main.css');
 	wp_enqueue_style('flatui-main.css'); 
-	if (!is_front_page()) {
+	if (is_front_page()) {
+		wp_register_style('flatui-home.css', get_stylesheet_directory_uri() . '/css/home.css');
+		wp_enqueue_style('flatui-home.css'); 
+	} else {
 		wp_register_style('flatui-blog.css', get_stylesheet_directory_uri() . '/css/blog.css');
 		wp_enqueue_style('flatui-blog.css'); 
-
-		wp_register_style('genericons.css', get_stylesheet_directory_uri() . '/css/genericons.css');
-		wp_enqueue_style('genericons.css'); 
 	}
 }
 
@@ -62,12 +65,18 @@ function output_posts_for_cat( $category ) {
     <?php endforeach;
 }
 
-function get_recent_posts($classname) {
+function get_recent_posts($classname, $hidePhone = true) {
 	$recent_posts = wp_get_recent_posts();
+	if ($hidePhone) {
+		$classes = "$classname hidden-phone";
+	} else {
+		$classes = $classname;
+	}
+
 	if (empty($recent_posts)) {
 		return;
 	}
-	?><ul class="<?php echo $classname; ?>"><?php
+	?><ul class="<?php echo $classes; ?>"><?php
 	foreach( $recent_posts as $recent ) { ?>
 		<li>
 			<a href="<?php echo get_permalink($recent["ID"]); ?>" 
