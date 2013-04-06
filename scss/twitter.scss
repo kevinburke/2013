@@ -1,15 +1,16 @@
 @import url(http://fonts.googleapis.com/css?family=Oxygen:300,700,400);
+@import 'colors.scss';
 
 $twitter-color: #2C3E50;
 
 html {
-	color: #fff !important;
+    color: $alternate-text-color !important;
 }
 
 @media (max-width: 767px) { 
-	html {
-		width: 100%;
-	}
+    html {
+        width: 100%;
+    }
 
     .h-feed {
         height: 500px;
@@ -22,48 +23,56 @@ html {
 }
 
 @media (min-width: 768px) { 
-	html {
-		width: 560px;
-	}
+    html {
+        width: 560px;
+    }
 }
 
 .root.timeline.twitter-timeline {
-	background-color: $twitter-color;
 
-	p, a, ol, ul, li {
-		font-family: 'Oxygen', 'Ubuntu', 'Helvetica Neue', Helvetica, arial, sans-serif;
-	}
+    p, a, ol, ul, li {
+        font-family: 'Oxygen', 'Ubuntu', 'Helvetica Neue', Helvetica, arial, sans-serif;
+    }
 }
 
 .root.twitter-timeline {
-	.tweet {
-		padding: 7px 10px;
-		border-bottom: 1px solid #fff;
-	}
+    .tweet {
+        padding: 7px 10px;
+        background: url("../img/gradient-line.png") no-repeat bottom center;
 
-	a, 
-	a:visited
-	{
-		text-decoration: underline;
-	}
+        &:nth-child(1n + 7) {
+            display: none;
+        }
+    }
 
-	.u-url,
-	.expand,
+    .e-entry-title {
+        font-size: 15.5px;
+    }
+
+    a, 
+    a:visited
+    {
+        text-decoration: underline;
+    }
+
+    .u-url,
+    .expand,
     .hashtag,
-	.profile {
-		text-decoration: none;
+    .profile
+    {
+        text-decoration: none;
 
-		&:hover {
-			text-decoration: underline;
-			color: #fff;
-		}
-	}
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 
 }
 
 .u-photo,
 .full-name,
-.inline-media
+.inline-media,
+.expand 
 {
-	display: none;
+    display: none;
 }
