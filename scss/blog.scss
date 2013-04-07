@@ -1,4 +1,5 @@
 @import 'colors.scss';
+
 $alternate-text-color: #222;
 
 .container {
@@ -10,8 +11,8 @@ $alternate-text-color: #222;
  */
 
 .blog-content {
-	padding: 10px;
-	box-sizing: border-box;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .entry-content {
@@ -70,88 +71,93 @@ $alternate-text-color: #222;
 }
 
 #comments {
-	textarea {
-		width: auto;
-	}
+    textarea {
+        width: auto;
+    }
 }
 
 .form-allowed-tags {
-	code {
-		white-space: normal;
-	}
+    code {
+        white-space: normal;
+    }
 }
 
 /**
  * Sidebar settings
  */
 .sidebar {
-	.genericon {
-		font: normal 32px/20px 'Genericons';
-		padding: 10px;
-		vertical-align: middle;
-		color: #fff;
-		width: auto;
-		height: auto;
-	}
+    .genericon {
+        font: normal 32px/20px 'Genericons';
+        padding: 10px;
+        vertical-align: middle;
+        color: #fff;
+        width: auto;
+        height: auto;
+    }
 
 }
 
 .link-menu {
-	li {
-		list-style-type: none;
-		margin-bottom: 20px;
-		border-radius: 5px;
+    li {
+        list-style-type: none;
+        margin-bottom: 20px;
+        border-radius: 5px;
 
-		a {
-			padding-top: 3px;
-			display: block;
-			color: #fff;
-			&:hover {
-				text-decoration: none;
-			}
-		}
-	}
+        a {
+            padding-top: 3px;
+            display: block;
+            color: #fff;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
 }
 
 /**
  * Comments
  */
 .commentlist {
-	padding-left: 0;
+    padding-left: 0;
 }
 
 .comment-meta {
-	$avatar-width: 44px;
-	$avatar-padding: 11px;
+    $avatar-width: 44px;
+    $avatar-padding: 11px;
 
-	img {
-		float: left;
-	}
-	
-	cite {
-		display: block;
-		margin-left: $avatar-width + $avatar-padding;
-		/*a {*/
-			/*color: $alternate-text-color;*/
-		/*}*/
+    img {
+        float: left;
+    }
 
-		span {
-			background-color: $list-color-5;
-			border-radius: 3px;
-			color: #fff;
-			font-size: 11px;
-			padding: 4px;
-			margin-left: 10px;
-		}
-	}
+    cite {
+        display: block;
+        margin-left: $avatar-width + $avatar-padding;
 
-	time {
-		font-size: 12px;
-		margin-left: $avatar-padding;
-		color: $alternate-text-color;
-	}
+        span {
+            background-color: $list-color-5;
+            border-radius: 3px;
+            color: #fff;
+            font-size: 11px;
+            padding: 4px;
+            margin-left: 10px;
+        }
+    }
+
+    time {
+        font-size: 12px;
+        margin-left: $avatar-padding;
+        color: $alternate-text-color;
+    }
 }
 
 .reply {
-	font-size: 12px;
+    font-size: 12px;
 }
+
+#page {
+    .syntaxhighlighter {
+        padding: 10px;
+        border-radius: 6px;
+    }
+}
+

@@ -9,6 +9,7 @@
 - inline list items if on an iphone, instead of extending them outside the
   margin
 - custom syntaxhighlighter colors
+- fix the float left on the blurb
 
 
 later:
