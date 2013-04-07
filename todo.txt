@@ -3,6 +3,12 @@
 - implement different social div for wide views
 - try out just putting the headings in bubbles
 - darken color on hover
+- double nested list should be indented
+- add meta description
+- add bitbucket logo
+- inline list items if on an iphone, instead of extending them outside the
+  margin
+- custom syntaxhighlighter colors
 
 
 later:
