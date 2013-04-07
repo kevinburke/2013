@@ -2,6 +2,7 @@
 - become more happy with color choices
 - implement different social div for wide views
 - try out just putting the headings in bubbles
+- darken color on hover
 
 
 later:
