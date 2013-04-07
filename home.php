@@ -33,18 +33,32 @@ get_header();
 				<li><a href="/kevin/cmcs-website-redesign-the-good-the-bad-and-the-ugly/">Breaking down my school's website redesign</a>
 			</ul>
 		</div>
-		<div class="accordion">
+		<div class="accordion clearfix">
 			<h3 id="contact" class="accordion-heading toggle">
 				<div class="genericon genericon-user"></div>
-				Social</h3>
-			<ul class="accordion-items hidden-phone">
-				<li><a href="mailto:kev@inburke.com">Email</a>
-				<li><a href="http://twitter.com/ekrubnivek">Twitter</a>
-				<li><a href="http://github.com/kevinburke">Github</a>
-				<li><a href="http://bitbucket.org/kevinburke">Bitbucket</a>
-				<li><a href="https://plus.google.com/111464885298476091898">Google+</a>
-				<li><a href="http://linkedin.com/in/ekrub">LinkedIn</a>
-			</ul>
+				Social
+			</h3>
+			<div class="hidden-phone contact-items">
+				<div class="square">
+					<div class="genericon genericon-mail"></div>
+					<a href="mailto:kev@inburke.com">Email</a>
+				</div>
+				<div class="square">
+					<a href="https://twitter.com/ekrubnivek"><div class="genericon genericon-twitter"></div>Twitter</a>
+				</div>
+				<div class="square">
+					<a href="https://github.com/kevinburke"><div class="genericon genericon-github"></div>Github</a>
+				</div>
+				<div class="square">
+					<a href="http://bitbucket.org/kevinburke">Bitbucket</a>
+				</div>
+				<div class="square">
+					<a href="https://plus.google.com/111464885298476091898"><div class="genericon genericon-googleplus"></div>Google+</a>
+				</div>
+				<div class="square">
+					<a href="http://linkedin.com/in/ekrub"><div class="genericon genericon-linkedin"></div>LinkedIn</a>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="span6">
