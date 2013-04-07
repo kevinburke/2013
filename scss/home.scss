@@ -88,3 +88,34 @@
     margin-right: 20px;
 }
 
+$square-width: 90px;
+
+.contact-items {
+    margin: 0 auto;
+}
+
+.square {
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 2px;
+    min-height: $square-width;
+    width: 32%;
+    display: inline-block;
+    background: url("../img/gradient-vertical.png") no-repeat center right;
+
+    &:nth-child(3n) {
+        background: none;
+    }
+
+    a {
+        color: #222;
+        display: block;
+        text-align: center;
+    }
+
+    .genericon {
+        margin: 20px auto 10px;
+        display: block;
+        padding-right: 12px;
+    }
+}
