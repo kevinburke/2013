@@ -28,7 +28,8 @@ get_header();
 			<ul class="accordion-items hidden-phone">
 				<li><a href="/kevin/the-real-reasons-you-cant-figure-out-how-to-code/">How beginning programmers should read a quickstart guide</a>
 				<li><a href="http://www.twilio.com/engineering/2012/01/18/dont-skimp-on-documentation">How to write documentation for users that don't read</a>
-				<li><a href="/kevin/the-best-ways-to-find-bugs-in-your-code/">Designing an API Client Library</a>
+				<li><a href="/kevin/client-library-design/">Designing an API Client Library</a>
+				<li><a href="/kevin/the-best-ways-to-find-bugs-in-your-code/">Why code review beats testing: evidence from decades of research</a>
 				<li><a href="/kevin/how-to-talk-to-recruiters-at-a-career-fair/">How to talk to career fair recruiters</a>
 				<li><a href="/kevin/cmcs-website-redesign-the-good-the-bad-and-the-ugly/">Breaking down my school's website redesign</a>
 			</ul>
