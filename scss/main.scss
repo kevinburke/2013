@@ -174,7 +174,13 @@ input[type="color"],
     text-align: center;
     margin: 0;
     background-color: $top-color;
-    color: $text-color;
+    a {
+        color: $text-color;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }
 
 

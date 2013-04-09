@@ -23,7 +23,7 @@
 	<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 <![endif]-->
 <div id="page" class="container hfeed site">
-<h1 id="title">KEVIN BURKE</h1>
+<h1 id="title"><a href="/" title="Back to the homepage">KEVIN BURKE</a></h1>
 <?php if (is_front_page()) {
 	include_once('blurb.php');
 }
