@@ -12,19 +12,11 @@ function flatui_css() {
 	wp_register_style('flatui-oxygen.css', '//fonts.googleapis.com/css?family=Oxygen:400,300,700');
 	wp_enqueue_style('flatui-oxygen.css'); 
 
-	wp_register_style('flatui-normalize.css', get_stylesheet_directory_uri() . '/css/normalize.css');
-	wp_enqueue_style('flatui-normalize.css'); 
-
-	wp_register_style('genericons.css', get_stylesheet_directory_uri() . '/css/genericons.css');
-	wp_enqueue_style('genericons.css'); 
-
-	wp_register_style('flatui-main.css', get_stylesheet_directory_uri() . '/css/main.css');
-	wp_enqueue_style('flatui-main.css'); 
 	if (is_front_page()) {
-		wp_register_style('flatui-home.css', get_stylesheet_directory_uri() . '/css/home.css');
+		wp_register_style('flatui-home.css', get_stylesheet_directory_uri() . '/css/home.css', array('twentytwelve-style'));
 		wp_enqueue_style('flatui-home.css'); 
 	} else {
-		wp_register_style('flatui-blog.css', get_stylesheet_directory_uri() . '/css/blog.css');
+		wp_register_style('flatui-blog.css', get_stylesheet_directory_uri() . '/css/blog.css', array('twentytwelve-style'));
 		wp_enqueue_style('flatui-blog.css'); 
 	}
 }

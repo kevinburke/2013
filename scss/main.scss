@@ -10,6 +10,9 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+@import 'license.scss';
+@import 'normalize.scss';
+@import 'genericons.scss';
 @import 'colors.scss';
 
 html,
@@ -19,7 +22,6 @@ select,
 textarea {
     color: #222;
 }
-
 
 body {
     font-size: 1em;
@@ -96,7 +98,6 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
 
 
 body {
