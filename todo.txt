@@ -11,6 +11,7 @@
 - jquery, google analytics to footer, from CDN
 - more line height in twitter iframe
 - pretty buttons
+- fix it in firefox
 
 later:
 - write about everything
