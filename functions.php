@@ -4,9 +4,9 @@ add_action('wp_enqueue_scripts', 'flatui_js');
 add_action('wp_enqueue_scripts', 'flatui_css');
 
 function flatui_css() {
-	wp_register_style('flatui-bootstrap.css', '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css');
+	wp_register_style('flatui-bootstrap.css', '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css', array(), null);
 	wp_enqueue_style('flatui-bootstrap.css'); 
-	wp_register_style('flatui-bootstrap-responsive.css', "//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css");
+	wp_register_style('flatui-bootstrap-responsive.css', "//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css", array(), null);
 	wp_enqueue_style('flatui-bootstrap-responsive.css'); 
 
 	wp_register_style('flatui-oxygen.css', '//fonts.googleapis.com/css?family=Oxygen:400,300,700');
