@@ -1,4 +1,6 @@
-var _gaq=[['_setAccount','UA-566397-2'],['_trackPageview']];
+var _gaq = _gaq || [];
+_gaq.push(['_setSiteSpeedSampleRate', 100]);
+_gaq.push(['_setAccount','UA-566397-2'],['_trackPageview']);
 (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
 g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
 s.parentNode.insertBefore(g,s)}(document,'script'));
