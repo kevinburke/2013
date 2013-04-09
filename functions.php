@@ -9,6 +9,9 @@ function flatui_css() {
 	wp_register_style('flatui-bootstrap-responsive.css', "//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css");
 	wp_enqueue_style('flatui-bootstrap-responsive.css'); 
 
+	wp_register_style('flatui-oxygen.css', '//fonts.googleapis.com/css?family=Oxygen:400,300,700');
+	wp_enqueue_style('flatui-oxygen.css'); 
+
 	wp_register_style('flatui-normalize.css', get_stylesheet_directory_uri() . '/css/normalize.css');
 	wp_enqueue_style('flatui-normalize.css'); 
 
