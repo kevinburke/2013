@@ -64,11 +64,7 @@ function get_recent_posts($classname, $hidePhone = true) {
 		'numberposts' => 7,
 		'post_status' => 'publish'
 	));
-	if ($hidePhone) {
-		$classes = "$classname hidden-phone";
-	} else {
-		$classes = $classname;
-	}
+	$classes = $hidePhone ?  "$classname hidden-phone" : $classname;
 
 	if (empty($recent_posts)) {
 		return;
@@ -77,7 +73,7 @@ function get_recent_posts($classname, $hidePhone = true) {
 	foreach( $recent_posts as $recent ) { ?>
 		<li>
 			<a href="<?php echo get_permalink($recent["ID"]); ?>" 
-				title="Look <?php echo esc_attr($recent["post_title"]); ?>">
+				title="<?php echo esc_attr($recent["post_title"]); ?>">
 				<?php echo $recent["post_title"]; ?>
 			</a>
 		</li>

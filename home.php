@@ -131,7 +131,7 @@ get_header();
 				</a>
 				</li>
 				<li>
-				<a href="http://luxr.webfactional.com">
+				<a href="/luxr">
 					LUXr - internship and website design
 				</a>
 				</li>
