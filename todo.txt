@@ -9,6 +9,8 @@
 - cant collapse the divs if you're in the wide view
 - link selection color should be better than purple.
 - jquery, google analytics to footer, from CDN
+- more line height in twitter iframe
+- pretty buttons
 
 later:
 - write about everything
