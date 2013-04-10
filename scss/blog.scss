@@ -1,4 +1,5 @@
 @import 'colors.scss';
+@import 'mixin.scss';
 
 $alternate-text-color: #222;
 
@@ -12,7 +13,7 @@ $alternate-text-color: #222;
 
 .blog-content {
     padding: 10px;
-    box-sizing: border-box;
+    @include border-box();
 }
 
 .entry-content {
