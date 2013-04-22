@@ -35,14 +35,13 @@ body {
  */
 
 ::-moz-selection {
-    background: $list-color-1;
+    background: $orange;
     text-shadow: none;
 }
 
 ::selection {
-    background: $list-color-1;
+    background: $orange;
     text-shadow: none;
-
 }
 
 /*
@@ -126,15 +125,15 @@ a {
 	color: $top-color;
 
 	&:hover {
-		color: $list-color-1;
+		color: $orange;
 	}
 
 	&:active {
-		color: $list-color-6;
+		color: $yellow;
 	}
 
 	&::selection {
-		color: $list-color-3;
+		color: $purple;
 	}
 }
 
@@ -165,7 +164,7 @@ input[type="color"],
     padding: 5px;
 
     &:focus {
-        border-color: $list-color-4;
+        border-color: $red;
         box-shadow: none;
     }
 }

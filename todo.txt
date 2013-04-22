@@ -12,9 +12,11 @@
 - more line height in twitter iframe
 - pretty buttons
 - "3 comments on" fix line height
+- twitter descenders are hidden
 
 later:
 - write about everything
 - fallback to local if css/js is not available
 - figure out projects pages
 - make divs un-toggle-able in wide mode
+
