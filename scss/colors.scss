@@ -3,42 +3,43 @@ $backing-color: #fff;
 $text-color: #fff;
 $alternate-text-color: #222;
 
-$list-color-1: #E67E22;
-$list-color-2: #1ABC9C;
-$list-color-3: #8E44AD;
-$list-color-4: #E74C3C;
-$list-color-5: #34495E;
-$list-color-6: #F1C40F;
+/*$orange: #E67E22;*/
+/*$turquoise: #1ABC9C;*/
+/*$purple: #8E44AD;*/
+/*$red: #E74C3C;*/
+/*$dark-blue: #34495E;*/
+/*$yellow: #F1C40F;*/
 
-$orange: $list-color-1;
-$turquoise: $list-color-2;
-$purple: $list-color-3;
-$red: $list-color-4;
-$dark-blue: $list-color-5;
-$yellow: $list-color-6;
+$orange: #ff6600;
+$turquoise: #00a0b0;
+$purple: #351330;
+$red: #cc333f;
+$dark-blue: #1B325F;
+$yellow: #edc951;
 
-$twitter-color: #2C3E50;
+$twitter-color: $dark-blue;
 
 .orange {
-	background-color: $list-color-1;
+	background-color: $orange;
 }
 
 .turquoise {
-	background-color: $list-color-2;
+	background-color: $turquoise;
 }
 
 .purple {
-	background-color: $list-color-3;
+	background-color: $purple;
 }
 
 .red {
-	background-color: $list-color-4;
+	background-color: $red;
 }
 
 .dark-blue {
-	background-color: $list-color-5;
+	background-color: $dark-blue;
 }
 
 .yellow {
-	background-color: $list-color-6;
+	background-color: $yellow;
 }
+
