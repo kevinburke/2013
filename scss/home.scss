@@ -46,30 +46,51 @@
 
 #top-posts {
     background-color: $orange;
+    &:hover, &:active {
+        background-color: $darker-orange;
+    }
 }
 
 #start-here {
     background-color: $turquoise;
+    &:hover, &:active {
+        background-color: $darker-turquoise;
+    }
 }
 
 #contact {
     background-color: $purple;
+    &:hover, &:active {
+        background-color: $darker-purple;
+    }
 }
 
 #recent-posts {
     background-color: $red;
+    &:hover, &:active {
+        background-color: $darker-red;
+    }
 }
 
 #trivia {
-    background-color: $dark-blue;
+    background-color: $yellow;
+    &:hover, &:active {
+        background-color: $darker-yellow;
+    }
 }
 
 #projects {
-    background-color: $yellow;
+    background-color: $dark-blue;
+    &:hover, &:active {
+        background-color: $darker-blue;
+    }
 }
 
 #twitter {
     background-color: $twitter-color;
+    &:hover, &:active {
+        background-color: $darker-blue;
+    }
 }
 
 @media (min-width: 768px) { 

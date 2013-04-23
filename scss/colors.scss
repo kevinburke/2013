@@ -3,12 +3,23 @@ $backing-color: #fff;
 $text-color: #fff;
 $alternate-text-color: #222;
 
-$orange: #ff6600;
+$orange: #ee7722;
+$darker-orange: adjust_color($orange, $red: -15, $blue: -40, $green: -30);
+
 $turquoise: #00a0b0;
-$purple: #351330;
+$darker-turquoise: adjust_color($turquoise, $blue: -20, $green: -20);
+
+$purple: #9553b0;
+$darker-purple: adjust_color($purple, $red: -10, $blue: -20, $green: -10);
+
 $red: #cc333f;
-$dark-blue: #1B325F;
+$darker-red: adjust_color($red, $red: -19, $blue: -12, $green: -8);
+
+$dark-blue: #233255;
+$darker-blue: adjust_color($dark-blue, $red: -19, $blue: -12, $green: -8);
+
 $yellow: #edc951;
+$darker-yellow: adjust_color($yellow, $red: -19, $blue: -12, $green: -20);
 
 $twitter-color: $dark-blue;
 
