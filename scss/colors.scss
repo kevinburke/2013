@@ -24,26 +24,44 @@ $darker-yellow: adjust_color($yellow, $red: -19, $blue: -12, $green: -20);
 $twitter-color: $dark-blue;
 
 .orange {
-	background-color: $orange;
+    background-color: $orange;
+    &:hover, &:active {
+        background-color: $darker-orange;
+    }
 }
 
 .turquoise {
-	background-color: $turquoise;
+    background-color: $turquoise;
+    &:hover, &:active {
+        background-color: $darker-turquoise;
+    }
 }
 
 .purple {
-	background-color: $purple;
+    background-color: $purple;
+    &:hover, &:active {
+        background-color: $darker-purple;
+    }
 }
 
 .red {
-	background-color: $red;
+    background-color: $red;
+    &:hover, &:active {
+        background-color: $darker-red;
+    }
 }
 
 .dark-blue {
-	background-color: $dark-blue;
+    background-color: $dark-blue;
+    &:hover, &:active {
+        background-color: $darker-blue;
+    }
 }
 
 .yellow {
-	background-color: $yellow;
+    background-color: $yellow;
+    &:hover, &:active {
+        background-color: $darker-yellow;
+    }
 }
 
