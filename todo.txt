@@ -11,6 +11,7 @@
 - more line height in twitter iframe
 - pretty buttons
 - "3 comments on" fix line height
+- two tone colors for blue
 
 later:
 - write about everything
