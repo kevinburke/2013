@@ -18,4 +18,4 @@ later:
 - fallback to local if css/js is not available
 - figure out projects pages
 - make divs un-toggle-able in wide mode
-
+- make unformatted code sections blue
