@@ -5,10 +5,10 @@
                 src="<?php echo get_stylesheet_directory_uri(); ?>/img/kevin-mask-blue.png" alt="Kevin Burke" />
         </a>
     </div>
-    <div  id="blurb-text">
-        Hey, I'm Kevin. I build great experiences. Currently I work at <a
-        href="https://www.twilio.com">Twilio</a>. <a href="/about">More
-        about me</a>
+    <div id="blurb-text">
+        Hey, I'm Kevin. I build great experiences. Former API engineer at <a
+        href="https://www.twilio.com">Twilio</a>, now doing freelance projects.
+        <a href="/about">More about me</a>
     </div>
 </div>
 
