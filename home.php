@@ -17,14 +17,15 @@ get_header();
 				<li><a href="/kevin/how-not-to-ask-questions-at-conference/">How not to ask questions at a conference</a>
 				<li><a href="/kevin/site-redesign/">Tips for designing your personal site</a>
 				<li><a href="/kevin/the-best-ways-to-find-bugs-in-your-code/">Why code review beats testing</a>
-				<li><a href="/kevin/site-redesign/">Reddit's database has two tables</a>
+				<li><a href="/kevin/reddits-database-has-two-tables/">Reddit's database has two tables</a>
 				<li><a href="https://kevinburke.bitbucket.org/markdowncss/">Markdown.css - let's make the Web prettier</a>
 			</ul>
 		</div>
 		<div class="accordion">
 			<h3 id="start-here" class="accordion-heading toggle">
 				<div class="genericon genericon-reply"></div>
-				Start Here</h3>
+				Start Here
+			</h3>
 			<ul class="accordion-items hidden-phone">
 				<li><a href="/kevin/the-real-reasons-you-cant-figure-out-how-to-code/">How beginning programmers should read a quickstart guide</a>
 				<li><a href="https://www.twilio.com/engineering/2012/01/18/dont-skimp-on-documentation">How to write documentation for users that don't read</a>
@@ -115,18 +116,28 @@ get_header();
 			</h3>
 			<ul class="accordion-items hidden-phone">
 				<li>
-				<a href="https://github.com/kevinburke/tecate">
-					Tecate.js - making it easier to spot syntax problems in HTML
-				</a>
+					<a href="https://github.com/kevinburke/doony">
+						Doony - a more usable UI for Jenkins
+					</a>
 				</li>
 				<li>
-				<a href="http://goodmorningcmc.inburke.com">
-					Good Morning CMC - a comprehensive daily email for CMC students
-				</a>
+					<a href="https://github.com/kevinburke/hulk">
+						Hulk - a human-usable, in-browser JSON editor
+					</a>
 				</li>
 				<li>
 				<a href="https://kevinburke.bitbucket.org/markdowncss">
 					Markdown.css - easy, beautiful CSS for your Markdown files
+				</a>
+				</li>
+				<li>
+					<a href="https://github.com/kevinburke/tecate">
+						Tecate.js - making it easier to spot syntax problems in HTML
+					</a>
+				</li>
+				<li>
+				<a href="http://goodmorningcmc.inburke.com">
+					Good Morning CMC - a comprehensive daily email for CMC students
 				</a>
 				</li>
 				<li>
