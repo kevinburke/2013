@@ -24,7 +24,7 @@ get_header();
 		<div class="accordion">
 			<h3 id="start-here" class="accordion-heading toggle">
 				<div class="genericon genericon-reply"></div>
-				Start Here
+				Usability/Design
 			</h3>
 			<ul class="accordion-items hidden-phone">
 				<li><a href="/kevin/the-real-reasons-you-cant-figure-out-how-to-code/">How beginning programmers should read a quickstart guide</a>
@@ -143,11 +143,6 @@ get_header();
 				<li>
 				<a href="/luxr">
 					LUXr - internship and website design
-				</a>
-				</li>
-				<li>
-				<a href="https://rssafter5.appspot.com">
-					RSS After 5 - scheduled RSS delivery
 				</a>
 				</li>
 			</ul>
