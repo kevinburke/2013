@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -eo pipefail
+
+main() {
+    pushd ~/code/deploys >/dev/null
+        fab prod deploy
+    popd
+}
+
+main "$@"

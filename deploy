@@ -1,5 +1,0 @@
-#!/bin/sh
-
-pushd ~/code/website/deploys >/dev/null
-    fab prod deploy
-popd
