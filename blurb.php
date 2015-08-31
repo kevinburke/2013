@@ -6,10 +6,7 @@
         </a>
     </div>
     <div id="blurb-text">
-        I build great experiences. Former API engineer at <a
-        href="https://www.twilio.com">Twilio</a>, now evaluating VR usability at
-        <a href="http://www.twentymilliseconds.com">Twenty Milliseconds</a>.
+        I build great experiences. Currently working at <a href="https://shyp.com">Shyp</a>.
         <a href="/about">More about me</a>
     </div>
 </div>
-
