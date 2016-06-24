@@ -6,7 +6,7 @@
         </a>
     </div>
     <div id="blurb-text">
-        I build great experiences. Currently working at <a href="https://shyp.com">Shyp</a>.
+        I build great experiences. Currently <a href="https://kev.inburke.com/consulting/">available for hire</a>.
         <a href="/about">More about me</a>
     </div>
 </div>
