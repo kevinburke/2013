@@ -36,6 +36,7 @@
 		<div class="entry-content">
 			<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentytwelve' ) ); ?>
 			<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'twentytwelve' ), 'after' => '</div>' ) ); ?>
+			<p><b>Liked what you read?</b> I am <a href="https://burke.services">available for hire.</a></p>
 		</div><!-- .entry-content -->
 		<?php endif; ?>
 		<footer class="entry-meta">
@@ -45,7 +46,7 @@
 			$categories_list = get_the_category_list( __( ', ', 'twentyeleven' ) );
 			if ( $categories_list ) {
 				printf( __( '<span class="%1$s">Posted in</span> %2$s.', 'twentytwelve' ), 'entry-utility-prep entry-utility-prep-cat-links', $categories_list );
-			} 
+			}
 			?>
 			</span>
 			<?php edit_post_link( __( 'Edit', 'twentytwelve' ), '<span class="edit-link">', '</span>' ); ?>

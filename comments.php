@@ -23,8 +23,6 @@ if ( post_password_required() )
 
 <div id="comments" class="comments-area">
 
-	<?php // You can start editing here -- including this comment! ?>
-
 	<?php if ( have_comments() ) : ?>
 		<h2 class="comments-title">
 			<?php
@@ -57,6 +55,7 @@ if ( post_password_required() )
 
 	<div class='hidden-phone'>
 	<?php comment_form(); ?>
+	<p>Comments are heavily moderated.</p>
 	</div>
 
 </div><!-- #comments .comments-area -->

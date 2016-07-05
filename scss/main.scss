@@ -106,9 +106,19 @@ body {
     padding: 0;
 }
 
+// Dedent list bullet points so they appear outside of the left edge
 ul {
     padding-left: 0;
 }
+
+// On mobile we strip the padding, so the bullets don't appear at all. We
+// should make them appear
+@media (max-width: 767px) { 
+    ul {
+        padding-left: 1em;
+    }
+}
+
 
 // bootstrap's code styling is awful
 pre, code {
