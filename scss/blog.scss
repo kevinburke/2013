@@ -163,5 +163,10 @@ $alternate-text-color: #222;
     .syntaxhighlighter {
         padding: 10px;
         border-radius: 6px;
+
+        @media (max-width: 767px) { 
+            font-size: 0.75em;
+        }
+
     }
 }

@@ -137,6 +137,14 @@ code {
     background: none;
 }
 
+// SyntaxHighlighter settings - Firefox for some reason pushes the content
+// down, but leaves the line numbers alone, Chrome doesn't have any problems.
+.code {
+    .container::before, .container::after {
+        content: normal;
+    }
+}
+
 a {
 	color: $top-color;
 
