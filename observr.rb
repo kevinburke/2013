@@ -12,7 +12,7 @@ watch( 'scss/blog\.scss' )  {|md| puts blog; system(blog) }
 watch( 'scss/twitter\.scss' )  {|md| puts twitter; system(twitter) }
 watch( 'scss/home\.scss' )  {|md| puts home; system(home) }
 
-watch( 'scss/colors\.scss' )  {|md| 
+watch( 'scss/colors\.scss' )  {|md|
   [main, blog, home, core, rdark].each do |css_file|
     puts css_file
     system css_file

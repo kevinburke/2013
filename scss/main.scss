@@ -116,6 +116,12 @@ pre, code {
     color: black;
 }
 
+@media (max-width: 767px) { 
+    code {
+        font-size: 0.75em;
+    }
+}
+
 code {
     border: 0;
     background: none;
