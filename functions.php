@@ -5,19 +5,19 @@ add_action('wp_enqueue_scripts', 'flatui_css');
 
 function flatui_css() {
 	wp_register_style('flatui-bootstrap.css', '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css', array(), null);
-	wp_enqueue_style('flatui-bootstrap.css'); 
+	wp_enqueue_style('flatui-bootstrap.css');
 	wp_register_style('flatui-bootstrap-responsive.css', "//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css", array(), null);
-	wp_enqueue_style('flatui-bootstrap-responsive.css'); 
+	wp_enqueue_style('flatui-bootstrap-responsive.css');
 
 	wp_register_style('flatui-oxygen.css', '//fonts.googleapis.com/css?family=Oxygen:400,300,700');
-	wp_enqueue_style('flatui-oxygen.css'); 
+	wp_enqueue_style('flatui-oxygen.css');
 
 	if (is_front_page()) {
 		wp_register_style('flatui-home.css', get_stylesheet_directory_uri() . '/css/home.css', array('twentytwelve-style'));
-		wp_enqueue_style('flatui-home.css'); 
+		wp_enqueue_style('flatui-home.css');
 	} else {
 		wp_register_style('flatui-blog.css', get_stylesheet_directory_uri() . '/css/blog.css', array('twentytwelve-style'));
-		wp_enqueue_style('flatui-blog.css'); 
+		wp_enqueue_style('flatui-blog.css');
 	}
 }
 
@@ -61,7 +61,7 @@ function output_posts_for_cat( $category ) {
 
 function get_recent_posts($classname, $hidePhone = true) {
 	$recent_posts = wp_get_recent_posts(array(
-		'numberposts' => 7,
+		'numberposts' => 10,
 		'post_status' => 'publish'
 	));
 	$classes = $hidePhone ?  "$classname hidden-phone" : $classname;
@@ -72,7 +72,7 @@ function get_recent_posts($classname, $hidePhone = true) {
 	?><ul class="<?php echo $classes; ?>"><?php
 	foreach( $recent_posts as $recent ) { ?>
 		<li>
-			<a href="<?php echo get_permalink($recent["ID"]); ?>" 
+			<a href="<?php echo get_permalink($recent["ID"]); ?>"
 				title="<?php echo esc_attr($recent["post_title"]); ?>">
 				<?php echo $recent["post_title"]; ?>
 			</a>
