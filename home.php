@@ -45,7 +45,7 @@ get_header();
 					<a href="mailto:kev@inburke.com">Email</a>
 				</div>
 				<div class="square">
-					<a href="https://twitter.com/ekrubnivek"><div class="genericon genericon-twitter"></div>Twitter</a>
+					<a href="https://twitter.com/derivativeburke"><div class="genericon genericon-twitter"></div>Twitter</a>
 				</div>
 				<div class="square">
 					<a href="https://github.com/kevinburke"><div class="genericon genericon-github"></div>Github</a>
@@ -98,7 +98,7 @@ get_header();
 				width="560"
 				height="300"
 				data-dnt="true"
-				href="https://twitter.com/ekrubnivek"
+				href="https://twitter.com/derivativeburke"
 				data-widget-id="318106551330148352"></a>
 			</li>
 		</div>
