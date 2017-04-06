@@ -114,7 +114,8 @@ ul {
 // On mobile we strip the padding, so the bullets don't appear at all. We
 // should make them appear
 @media (max-width: 767px) { 
-    ul {
+    /* extra selectors here for ol are some override bullshit */
+    ul, #content .entry-content ol {
         padding-left: 1em;
     }
 }
