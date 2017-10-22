@@ -391,3 +391,9 @@ input[type="color"],
         page-break-after: avoid;
     }
 }
+
+/* override the default background provided by Pygments */
+.container .chroma  { 
+    background: #233255; 
+    color: #d0d0d0;
+}

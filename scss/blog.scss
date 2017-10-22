@@ -171,3 +171,9 @@ $alternate-text-color: #222;
 
     }
 }
+
+/* override the default background provided by Pygments */
+.container .chroma  { 
+    background: #233255; 
+    color: #d0d0d0;
+}

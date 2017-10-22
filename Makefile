@@ -12,3 +12,4 @@ venv/bin/pygmentize: | venv
 
 generate-css: | venv/bin/pygmentize
 	venv/bin/pygmentize -S native -f html -a .chroma > scss/syntax-highlights.scss
+	echo "Edit the file and change the '.chroma' background color to #233255"
