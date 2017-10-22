@@ -3,3 +3,12 @@ install:
 
 watch:
 	./observr.rb
+
+venv:
+	virtualenv venv
+
+venv/bin/pygmentize: | venv
+	venv/bin/pip install -U pygments
+
+generate-css: | venv/bin/pygmentize
+	venv/bin/pygmentize -S monokai -f html -a .chroma > scss/syntax-highlights.scss
