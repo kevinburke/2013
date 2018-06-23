@@ -16,3 +16,30 @@ This generates the following CSS files:
 - css/home.css
 - css/blog.css (styles for posts)
 - css/twitter.css (the Twitter widget on the homepage)
+
+## Serving Locally
+
+1) Clone Wordpress
+
+2) Symlink the theme into the wp-content folder.
+
+    ```
+    ln -s ~/src/github.com/kevinburke/2013 ~/src/github.com/Wordpress/Wordpress/wp-content/themes
+    ```
+
+3) start mysql:
+
+    ```
+    brew services start mysql
+    ```
+
+4) point the MAMP app at ~/src/github.com/Wordpress/Wordpress
+
+5) go to this URL http://localhost:8888/phpMyAdmin/server_databases.php?db=&lang=en&collation_connection=utf8mb4_unicode_ci&token=dce2ae8a8b0da282ac42d72b310895a9
+
+6) create a database (kevinburke)
+
+7) create a user with privileges on that database (kevin) - check 1Password for
+db password
+
+8) use warthog password to login on localhost:8888
