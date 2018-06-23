@@ -61,7 +61,7 @@ function output_posts_for_cat( $category ) {
 
 function get_recent_posts($classname, $hidePhone = true) {
 	$recent_posts = wp_get_recent_posts(array(
-		'numberposts' => 10,
+		'numberposts' => 8,
 		'post_status' => 'publish'
 	));
 	$classes = $hidePhone ?  "$classname hidden-phone" : $classname;
