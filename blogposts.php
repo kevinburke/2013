@@ -11,7 +11,18 @@ get_header();
     <h2>All Posts</h2>
     <?php
     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-    $args = array( 'post_type' => 'post', 'posts_per_page' => 75, 'paged' => $paged );
+    $args = array(
+        'post_type' => 'post',
+        'posts_per_page' => 75,
+        'paged' => $paged,
+        'category__not_in' => array(48, 587),
+        'date_query' => array(
+            array(
+                'after'     => 'March 1st, 2011',
+                'inclusive' => true,
+            ),
+        ),
+    );
     $wp_query = new WP_Query($args);
     while ( have_posts() ) : the_post(); ?>
         <p>
