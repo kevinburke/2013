@@ -11,14 +11,15 @@ get_header();
 		<div class="accordion">
 			<h3 id="top-posts" class="accordion-heading toggle">
 				<div class="genericon genericon-star"></div>
-				Most Popular</h3>
+				Popular</h3>
 			<ul class="accordion-items hidden-phone">
+				<li><a href="https://burke.services">Hire me</a>
 				<li><a href="/kevin/open-season-on-virgin-mobile-customer-data/">Virgin Mobile fails web security 101, leaves 6 million subscriber accounts wide open</a>
 				<li><a href="/kevin/how-not-to-ask-questions-at-conference/">How not to ask questions at a conference</a>
 				<li><a href="/kevin/site-redesign/">Tips for designing your personal site</a>
 				<li><a href="/kevin/the-best-ways-to-find-bugs-in-your-code/">Why code review beats testing</a>
-				<li><a href="/kevin/reddits-database-has-two-tables/">Reddit's database has two tables</a>
-				<li><a href="https://kevinburke.bitbucket.org/markdowncss/">Markdown.css - let's make the Web prettier</a>
+				<li>Avoid <a href="/kevin/things-to-use-instead-of-jwt/">JWT</a>, <a href="/kevin/dont-use-sails-or-waterline/">Sails.js</a>, and <a href="/kevin/faker-js-problems/">Faker</a>
+				<li><a href="/kevin/go-web-development/">Web development in Go</a>
 			</ul>
 		</div>
 		<div class="accordion">
@@ -32,6 +33,7 @@ get_header();
 				<li><a href="/kevin/client-library-design/">Designing an API Client Library</a>
 				<li><a href="/kevin/how-to-talk-to-recruiters-at-a-career-fair/">How to talk to career fair recruiters</a>
 				<li><a href="/kevin/cmcs-website-redesign-the-good-the-bad-and-the-ugly/">Breaking down my school's website redesign</a>
+				<li><a href="/blog/">More posts</a>
 			</ul>
 		</div>
 		<div class="accordion clearfix">

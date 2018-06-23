@@ -78,6 +78,7 @@ function get_recent_posts($classname, $hidePhone = true) {
 			</a>
 		</li>
 	<?php } ?>
+		<li><a href="/blog/"><b>View the entire archive →</b></li>
 	</ul>
 <?php
 }

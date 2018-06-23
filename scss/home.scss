@@ -15,11 +15,11 @@
     margin: 1em 0 0 1em;
     padding-bottom: 7px;
     cursor: pointer;
-    color: $top-color;
     list-style-type: none;
 
     li {
         background: url("../img/gradient-line.png") no-repeat bottom center;
+        padding: 5px;
 
         &:last-child {
             background: none;
@@ -27,9 +27,12 @@
 
         a {
             text-decoration: none;
-            padding: 5px;
             cursor: pointer;
-            display: block;
+            color: $top-color;
+        }
+        
+        a:hover {
+            text-decoration: underline;
         }
     }
 }
