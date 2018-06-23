@@ -1,6 +1,6 @@
 all: style.css css/home.css css/blog.css css/twitter.css
 
-style.css:
+style.css: scss/main.scss
 	sass --style compressed scss/main.scss > style.css
 
 css/home.css: scss/home.scss

@@ -5,7 +5,7 @@ Template Name: flatui-blogposts
 get_header();
 
 ?>
-<div class="row">
+<div class="blogposts row">
 <?php get_sidebar(); ?>
     <div class="span8 offset1 blog-content">
     <h2>All Posts</h2>
@@ -26,7 +26,7 @@ get_header();
     $wp_query = new WP_Query($args);
     while ( have_posts() ) : the_post(); ?>
         <p>
-        <span style="margin-right: 15px;"><?php echo get_the_date( 'F Y' ) ?></span>
+        <div class="blogposts-date"><?php echo get_the_date( 'F Y' ) ?></div>
         <a href="<?php echo get_permalink(); ?>"><?php the_title() ?></a>
         </p>
     <?php endwhile; ?>
