@@ -26,7 +26,7 @@ $alternate-text-color: #222;
     }
 
     p {
-        margin: 0 0 $padding;
+        margin: $padding / 2 0 $padding / 2;
     }
 
     ol {
