@@ -14,9 +14,9 @@ get_header();
 				Popular</h3>
 			<ul class="accordion-items hidden-phone">
 				<li><a href="https://burke.services">Hire me</a>
-				<li><a href="/kevin/open-season-on-virgin-mobile-customer-data/">Virgin Mobile fails web security 101, leaves 6 million subscriber accounts wide open</a>
 				<li><a href="/kevin/how-not-to-ask-questions-at-conference/">How not to ask questions at a conference</a>
 				<li><a href="/kevin/site-redesign/">Tips for designing your personal site</a>
+				<li><a href="/kevin/open-season-on-virgin-mobile-customer-data/">Virgin Mobile fails web security 101, leaves 6 million subscriber accounts wide open</a>
 				<li><a href="/kevin/the-best-ways-to-find-bugs-in-your-code/">Why code review beats testing</a>
 				<li>Avoid <a href="/kevin/things-to-use-instead-of-jwt/">JWT</a>, <a href="/kevin/dont-use-sails-or-waterline/">Sails.js</a>, and <a href="/kevin/faker-js-problems/">Faker</a>
 				<li><a href="/kevin/go-web-development/">Web development in Go</a>
@@ -44,7 +44,7 @@ get_header();
 			<div class="hidden-phone contact-items">
 				<div class="square">
 					<div class="genericon genericon-mail"></div>
-					<a href="mailto:kev@inburke.com">Email</a>
+					<a href="mailto:kevin@burke.dev">Email</a>
 				</div>
 				<div class="square">
 					<a href="https://twitter.com/derivativeburke"><div class="genericon genericon-twitter"></div>Twitter</a>
@@ -71,7 +71,7 @@ get_header();
 			<ul class="accordion-items hidden-phone">
 				<li class="nopointer">has used a DVORAK keyboard since high school</li>
 				<li>
-				<a href="https://kev.inburke.com/kevin/escaping-from-your-email/">
+				<a href="/kevin/escaping-from-your-email/">
 					downloads email only once every 4 hours
 				</a>
 				</li>
@@ -138,9 +138,7 @@ get_header();
 					</a>
 				</li>
 				<li>
-				<a href="http://goodmorningcmc.inburke.com">
 					Good Morning CMC - a comprehensive daily email for CMC students
-				</a>
 				</li>
 				<li>
 				<a href="/luxr">
