@@ -63,31 +63,6 @@ get_header();
 				</div>
 			</div>
 		</div>
-		<div class="accordion">
-			<h3 id="trivia" class="accordion-heading toggle">
-				<div class="genericon genericon-chat"></div>
-				Trivia
-			</h3>
-			<ul class="accordion-items hidden-phone">
-				<li class="nopointer">has used a DVORAK keyboard since high school</li>
-				<li>
-				<a href="/kevin/escaping-from-your-email/">
-					downloads email only once every 4 hours
-				</a>
-				</li>
-				<li>
-				<a href="https://www.economist.com/finance/displaystory.cfm?story_id=E1_RTVDTJR">
-					started a Facebook group that was featured in the Economist
-				</a>
-				</li>
-				<li class="nopointer">emailed his entire high school about how to use apostrophes</li>
-				<li>
-				<a href='https://www.youtube.com/watch?v=sdMoE7mr9H0'>
-					made a 10-minute video on myths about foreign aid
-				</a>
-				</li>
-			</ul>
-		</div>
 	</div>
 	<div class="span6">
 		<div class="accordion">
