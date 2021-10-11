@@ -36,7 +36,7 @@
 		<div class="entry-content">
 			<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentytwelve' ) ); ?>
 			<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'twentytwelve' ), 'after' => '</div>' ) ); ?>
-			<p><b>Liked what you read?</b> I am <a href="https://burke.services">available for hire.</a></p>
+			<p><b>Liked what you read?</b> I am <a href="https://kevin.burke.dev/kevinburke.pdf">looking for work.</a></p>
 		</div><!-- .entry-content -->
 		<?php endif; ?>
 		<footer class="entry-meta">
